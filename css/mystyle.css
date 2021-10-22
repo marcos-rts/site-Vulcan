@@ -1,3 +1,9 @@
+.text_my_style{
+    text-align: right;
+}
+
+
+
 #hover_produto:hover{
     background-color: rgb(255, 255, 255);
     transition:all .5s ease-in-out;
