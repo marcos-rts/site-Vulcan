@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vulcan</title>
+    <link rel="stylesheet" type="text/css" href="../css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+    <script src="https://kit.fontawesome.com/b99a376f5d.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <!-- Navigation bar -->
+        <nav class="navbar is-success is-fixed-top">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <h1>VULCAN</h1>
+                </a>
+                <div class="navbar-burger burger" data-target="navbarvulcan">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div id="navbarvulcan" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html:#about">
+                        <span class="icon">
+                            <i class="fas fa-info"></i>
+                        </span>
+                        <span>Sobre nós</span>
+                    </a>
+                    <a class="navbar-item" href="#services">
+                        <span class="icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                        <span>Serviços</span>
+                    </a>
+                    <a class="navbar-item" href="#parcerias">
+                        <span class="icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </span>
+                        <span>parcerias</span>
+                    </a>
+                    <a class="navbar-item" href="blog.html">
+                    <span class="icon">
+                      <i class="fas fa-file-alt"></i>
+                    </span>
+                    <span>Blog</span>
+                  </a>
+                    <a class="navbar-item" href="portifolio.html">
+                        <span class="icon">
+                            <i class="fas fa-th-list"></i>
+                        </span>
+                        <span>Portfolio</span>
+                    </a>
+                    <a class="navbar-item" href="#contact">
+                        <span class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span>Contato</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <br>
+    <div class="container ">
+        <div class="section">
+            <div class="columns">
+                <div class="column has-text-centered ">
+                    <h1 class="title" style="color: rgb(7, 100, 11);">Alguns dos nossos trabalhos</h1><br>
+                </div>
+            </div>
+            <div id="app" class="row columns is-multiline ">
+                <div v-for="card in cardData" key="card.id" class="column is-4">
+                    <div class="card large">
+                        <div class="img-container">
+                            <figure class="image is-16by9">
+                                <img src="../images/bazar_pocotom.png" alt="Image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4 no-padding">Bazar Pocotom</p>
+                                    <p>
+                                        <span class="title is-6">
+                                            <a target="_blank" href="http://bazarpocotom.42web.io/"> Acesse aqui </a>
+                                        </span> </p>
+                                    <p class="subtitle is-6">Site criado para a o bazar poder revolucionar seu negocio
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                Criado em 2021
+                                <div class="background-icon"><span class="icon-twitter"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <div class="soc">
+                    <a href="#"><i class="fa fa-github-alt fa-lg" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+                </div>
+                <p>
+                    <strong>&copy; Vulcan Consultoria</strong> - Desde de 2021
+                    <br>
+                    <!-- <strong>Template</strong> by <a href="http://jgthms.com">Marcos Alexandre</a>. -->
+                    O código deste site esta disponivel em <a target="_blank"
+                        href="https://github.com/alexandre824/site-Vulcan">Vulcan</a>. <br>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../js/cardsData.js"></script>
+
+    <!-- Using Vue to populate cards to reduce redundant code -->
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                cardData: cardsData
+            }
+        })
+    </script>
+</body>
+
+</html>
