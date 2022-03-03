@@ -80,35 +80,57 @@
                 <div class="column has-text-centered">
                     <h1 class="title" style="color: rgb(7, 100, 11);">Alguns dos nossos trabalhos</h1><br>
                 </div>
+
+                
+    
+
             </div>
-            <div id="app" class="row columns is-multiline ">
-                <div v-for="card in cardData" key="card.id" class="column is-4">
-                    <div class="card large">
-                        <div class="img-container">
-                            <figure class="image is-16by9">
-                                <img src="../images/bazar_pocotom.png" alt="Image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding"><a href="bazar_pocotom.html">Bazar Pocotom</a></p>
-                                    <p>
-                                        <span class="title is-6">
-                                            <a target="_blank" href="http://bazarpocotom.42web.io/"> Acesse aqui </a>
-                                        </span> </p>
-                                    <p class="subtitle is-6">Site criado para a o bazar poder revolucionar seu negocio
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                Criado em 2021
-                                <div class="background-icon"><span class="icon-twitter"></span></div>
-                            </div>
-                        </div>
-                    </div>
+                        <h1>Pagina de mostruario em desenvolvimento </h1>
+
+            <section class="section">
+        <div class="container is-fluid">
+            <div class="columns">
+                <div class="column">
+                    <img src="https://source.unsplash.com/800x1000/?nature,water" onclick="openModal();currentSlide(1)">
+                    <img src="https://source.unsplash.com/800x550/?nature,water" onclick="openModal();currentSlide(4)">
+                </div>
+                <div class="column">
+                    <img src="https://source.unsplash.com/800x600/?nature,water" onclick="openModal();currentSlide(2)">
+                    <img src="https://source.unsplash.com/800x650/?nature,water" onclick="openModal();currentSlide(5)">
+                </div>
+                <div class="column">
+                    <img src="https://source.unsplash.com/800x900/?nature,water" onclick="openModal();currentSlide(3)">
+                    <img src="https://source.unsplash.com/800x700/?nature,water" onclick="openModal();currentSlide(6)">
                 </div>
             </div>
+
+            <div class="modal" id="myModal">
+                <div class="modal-content is-vcentered">
+                  <div class="item-slide">
+                    <img src="https://source.unsplash.com/800x1000/?nature,water">
+                  </div>
+                  <div class="item-slide">
+                    <img src="https://source.unsplash.com/800x600/?nature,water">
+                  </div>
+                  <div class="item-slide">
+                    <img src="https://source.unsplash.com/800x900/?nature,water">
+                  </div>
+                  <div class="item-slide">
+                    <img src="https://source.unsplash.com/800x550/?nature,water">
+                  </div>
+                  <div class="item-slide">
+                    <img src="https://source.unsplash.com/800x650/?nature,water">
+                  </div>
+                  <div class="item-slide">
+                    <img src="https://source.unsplash.com/800x700/?nature,water">
+                  </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              <button onclick="closeModal()" class="modal-close is-large" aria-label="close"></button>
+            </div>
+        </div>
+    </section>
         </div>
     </div>
 

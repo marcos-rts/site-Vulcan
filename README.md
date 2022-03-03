@@ -17,3 +17,6 @@
 
  -> <a href="https://github.com/alexandre824/Project_ecommerce_TCC">Link para o Github</a>
  -> <a href="http://bazarpocotom.42web.io/">Link para o E-commerce</a>
+
+
+ um dos itens ser onde vai vender o produto, fazer tipo um BKP do site 
