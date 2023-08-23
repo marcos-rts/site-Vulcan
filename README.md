@@ -1,6 +1,6 @@
 # Site Vulcan
 
-![Imagem do Site](link_para_imagem.png) <!-- Se você tiver uma imagem relacionada ao site, adicione aqui -->
+![Imagem do Site](images/tela.png) <!-- Se você tiver uma imagem relacionada ao site, adicione aqui -->
 
 Este é o repositório para o projeto de um site desenvolvido para a empresa fictícia "Vulcan", como parte de um projeto na Faculdade Fatec Campinas.
 
